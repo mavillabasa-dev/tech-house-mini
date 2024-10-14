@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tech House</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="banner banner--desktop">
+      <div class="banner__image">
+        <img src="assets/Company_logo.svg" alt="Banner desktop" />
+      </div>
+      <div class="banner__content">
+        <p class="banner__subtitle">A partir de 12 meses</p>
+        <p class="banner__text">Pienso especializado saludable</p>
+        <button class="banner__button">¡Compra ahora!</button>
+      </div>
+    </div>
+
+    <div class="banner banner--mobile">
+      <div class="banner__image">
+        <img src="assets/Company_logo_mob.svg" alt="Banner mobile" />
+      </div>
+      <div class="banner__content">
+        <p class="banner__subtitle">A partir de 12 meses</p>
+        <p class="banner__text">Pienso especializado saludable</p>
+        <button class="banner__button">¡Compra ahora!</button>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".banner__button").click(function () {
+          var $button = $(this);
+          if ($button.css("background-color") === "rgb(122, 187, 0)") {
+            $button.css("background-color", "#CC292B");
+          } else {
+            $button.css("background-color", "#7ABB00");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

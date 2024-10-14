@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+.banner {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.banner__image img {
+  width: 100%;
+  height: auto;
+}
+.banner__content {
+  margin-top: 10px;
+}
+.banner__subtitle {
+  font-weight: 700;
+  margin: 0;
+}
+.banner__text {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+.banner__button {
+  background-color: #7ABB00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.banner__button:hover {
+  background-color: #CC292B;
+}
+.banner--mobile {
+  width: 146px;
+}
+.banner--mobile .banner__image img {
+  height: 77px;
+}
+.banner--desktop {
+  width: 232px;
+}
+.banner--desktop .banner__image img {
+  height: 110px;
+}
+
+@media (min-width: 768px) {
+  .banner--desktop {
+    display: block;
+  }
+  .banner--mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .banner--desktop {
+    display: none;
+  }
+  .banner--mobile {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
